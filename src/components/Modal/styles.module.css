@@ -1,0 +1,20 @@
+.modalContainer{
+    /* height: 0;
+    width: 0; */
+    background-color: rgb(44, 43, 43);
+    
+    position: absolute;
+    font-size: large;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    overflow: hidden;
+    /* display: none; */
+}
+.modalContainer label span{
+    margin-right: 1rem;
+}
+
