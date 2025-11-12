@@ -19,7 +19,13 @@ export default ()=> {
         if (config.specials) set = set.concat(specials);
 
         if(set.length == 0){
-            alert("Você precisa incluir pelo menos uma configuração")
+            alert("Você precisa incluir pelo menos uma configuração de caracteres")
+            return
+        }
+
+        if(config.length < 5){
+            console.log("O tamanho minímo deve ser 5, faz o bagulho direito karai")
+            alert("O tamanho minímo deve ser 5, faz o bagulho direito karai")
             return
         }
 
@@ -27,7 +33,6 @@ export default ()=> {
             config.length = 30;
             console.log("O tamanho máximo de caracteres para a senha é 30!");
             alert("O tamanho máximo de caracteres para a senha é 30!");
-            
         };
 
   
